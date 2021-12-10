@@ -12,7 +12,7 @@ body {
 .jumbotron {
 	background-color: white;
 	background-size: contain;
-	height: 600px;
+	height: 500px;
 	width: 100%;
 	color: black;
 }
@@ -25,6 +25,14 @@ body {
 	color: black;
 }
 
+.titledetails {
+	background-color: white;
+	background-size: contain;
+	height: 200px;
+	width: 100%;
+	color: black;
+}
+
 .jumbotron .display-1 {
 	text-align: left;
 	margin-top: 30px;
@@ -32,11 +40,18 @@ body {
     font-weight: 900;
 }
 
-.jumbotron .display-2 {
+.titledetails .display-1 {
 	text-align: center;
 	margin-top: 30px;
     font-size: 54px;
-    font-weight: 400;
+    font-weight: 900;
+}
+
+.titledetails .display-2 {
+	text-align: center;
+	margin-top: 30px;
+    font-size: 54px;
+    font-weight: 900;
 }
 
 .jumbotron p {
@@ -109,6 +124,7 @@ body {
 .card {
 	width: 12rem;
 	font-size: 10;
+	
 }
 
 

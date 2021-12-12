@@ -5,67 +5,37 @@ html {
 body {
   font-family: "Poppins", sans-serif;
   font-size: 16px;
-  background-color: white;
 }
 
 section {
   padding-top: 1rem;
 }
 
-/* font responsive size */
-
-.jumbotron .fontsize (max-width: 50%) {
-  .jumbotron .display-1 {
-    font-size: 27px;
-  }
-}
-
-/* akhir font responsive size */
-
 /*Jumbotron*/
 
-.titledetails {
-  background-color: white;
-  background-size: contain;
+.jumbotron {
+  background-image: url(/images/jumbotron2.jpg);
+  background-size: cover;
   padding-top: 8rem;
+  height: auto;
   width: 100%;
   color: black;
 }
 
 .jumbotron .display-1 {
-  width: auto;
-  max-height: 1000px;
-  left: 164px;
-  bottom: auto;
-  margin-top: auto;
-  font-size: 54px;
-  font-weight: 800;
-}
-
-.titledetails .display-1 {
   padding-top: 2rem;
   font-size: 54px;
   font-weight: 900;
 }
 
-.titledetails .display-2 {
+.jumbotron .display-2 {
   font-size: 54px;
   font-weight: 900;
 }
 
-.titledetails .pdetails {
+.jumbotron .pdetails {
   font-size: 20px;
   font-weight: 500;
-}
-
-.jumbotron .hello {
-  font-size: 48;
-  font-weight: 600;
-}
-
-h3 {
-  font-weight: 700;
-  font-size: 35px;
 }
 
 /*Akhir Jumbotron*/
@@ -82,6 +52,7 @@ h3 {
 
 .navbar .navbar-nav .nav-link:hover {
   color: yellow;
+  font-size: large;
 }
 
 .navbar .navbar-brand {
@@ -97,14 +68,14 @@ h3 {
 
 /* Form */
 
-.container .row .col-md-4 .container .h3 {
-  font-size: 10;
-  color: white;
+.radiotext {
+  font-size: 17px;
   font-weight: 600;
+  color: white;
 }
 
-.container .row .col-md-8 .container .h3 {
-  font-size: 10;
+.container .row .col-md-4 .container .h3 {
+  font-size: 40;
   color: white;
   font-weight: 600;
 }
@@ -113,8 +84,67 @@ h3 {
   background-color: #00bfa6;
 }
 
-.container .row .col-md-4 .container .h3 .radiotext {
-  color: white;
+form .btn {
+  margin-top: 3;
+  margin-bottom: auto;
 }
-
 /* akhir form*/
+
+/* Mobile Responsive */
+@media only screen and (max-width: 480px) {
+  /* Navbar */
+  .navbar .navbar-nav .nav-link {
+    font-size: small;
+    color: white;
+  }
+  .navbar .navbar-nav .nav-link:hover {
+    color: yellow;
+    font-size: medium;
+  }
+
+  .navbar .navbar-brand {
+    color: white;
+    font-size: 20px;
+  }
+
+  .navbar .navbar-text {
+    color: white;
+    font-size: 15px;
+  }
+  /* Akhir Navbar */
+
+  /* Title */
+
+  .jumbotron .display-2 {
+    font-size: 30px;
+    font-weight: 900;
+  }
+
+  .jumbotron .pdetails {
+    font-size: 12px;
+    font-weight: 500;
+  }
+
+  /* AKhir title */
+
+  /* Form */
+
+  .container .row {
+    padding: 0rem 2rem 2rem 2rem;
+    font-size: 12px;
+  }
+
+  .radiotext {
+    font-size: 12px;
+    font-weight: 500;
+    color: white;
+  }
+
+  .input-group .input-group-sm .container .row .col-md-4 .container h3 {
+    font-size: 19px;
+    color: white;
+    font-weight: 600;
+  }
+
+  /* Akhhir form */
+}

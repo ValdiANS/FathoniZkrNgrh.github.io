@@ -24,11 +24,11 @@ section {
 /*Jumbotron*/
 
 .jumbotron {
-  background-image: url(/images/jumbotron1.jpg);
+  background-color: white;
   background-size: cover;
   padding-top: 8rem;
   width: 100%;
-  color: white;
+  color: black;
 }
 
 .jumbotron .display-1 {

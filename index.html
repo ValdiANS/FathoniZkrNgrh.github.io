@@ -15,6 +15,11 @@
       integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
       crossorigin="anonymous"
     />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="index.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,37 +33,38 @@
   </head>
   <body>
     <!-- Navbar -->
-
-    <nav class="navbar navbar-expand-lg fixed-top mt-auto navbar-dark shadow">
+    <nav
+      class="navbar navbar-expand-lg fixed-top navbar-dark shadow"
+      style="background-color: #00bfa6"
+    >
       <div class="container">
         <a class="navbar-brand" href="index.html">FoodPlans</a>
+        <span
+          class="navbar-text mr-auto justify-content-end"
+          style="font-size: 17px; color: white"
+        >
+          by Sixers
+        </span>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler ml-auto"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <span class="navbar-text"> by Sixers </span>
-        <div class="collapse navbar-collapse" id="navbarText">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#jumbotron">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#foodplans">Foodplans Calculator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="calc.html">IMT Calculator</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="details.html">Food Details</a>
-            </li>
-          </ul>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" aria-current="page" href="#jumbotron"
+              >Home</a
+            >
+            <a class="nav-link" href="foodplans.html">Foodplans Calculator</a>
+            <a class="nav-link" href="calc.html">IMT Calculator</a>
+            <a class="nav-link" href="details.html">Food Details</a>
+          </div>
         </div>
       </div>
     </nav>
@@ -90,138 +96,9 @@
           </div>
         </div>
       </div>
-      
     </section>
 
     <!-- Akhir Jumbotron -->
-
-    <!-- Title -->
-
-    <section class="container titledetails text-center mb-auto" id="foodplans">
-      <div class="container">
-        <h1 class="display-2" ><span class="display-2">FoodPlans</span></h1>
-        <p class="pdetails lead font-weight-normal">
-          Tentukan Goals anda dan dapatkan rekomendasi makanan anda.
-        </p>
-      </div>
-    </section>
-
-    <!-- akhir Title -->
-
-    <!-- FoodPlans -->
-  <div class="container">
-    
-    <div class="row justify-content-start">
-
-      <!-- Form -->
-      <div class="col-md-4 custombg">
-          <form>
-            <div class="container mb-3 mt-3 ">
-              <h3 class="h3">Goals</h3>
-              <div class="ml-auto radiotext">
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault1"
-                  />
-                  <label class="form-check-label" for="flexRadioDefault1">
-                    Bulking
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Slimming
-                  </label>
-                </div>
-                <div class="form-check">
-                  <input
-                    class="form-check-input"
-                    type="radio"
-                    name="flexRadioDefault"
-                    id="flexRadioDefault2"
-                    checked
-                  />
-                  <label class="form-check-label" for="flexRadioDefault2">
-                    Balancing
-                  </label>
-                </div>
-              </div>
-            </div>
-            <div class="container mb-3">
-              <h4 class="h3">Kriteria</h4>
-              <div class="ml-auto">
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Kalori</span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    aria-label="number"
-                  />
-                  <span class="input-group-text">/100gr</span>
-                </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Protein </span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    aria-label="number"
-                  />
-                  <span class="input-group-text">/100gr</span>
-                </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Lemak </span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    aria-label="number"
-                  />
-                  <span class="input-group-text">/100gr</span>
-                </div>
-                <div class="input-group mb-3">
-                  <span class="input-group-text">Karbohidrat</span>
-                  <input
-                    type="number"
-                    class="form-control"
-                    aria-label="number"
-                  />
-                  <span class="input-group-text">/100gr</span>
-                </div>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary mb-4 ml-lg-4">
-              Start
-            </button>
-          </form>
-        </section>
-      </div>
-        
-    
-
-      <!-- Akhir Form -->
-
-      <!-- Result -->
-      
-        <div class="col-md-8 ml-lg-4">
-          <h3 class="h3">Result</h3>
-        </div>
-      
-
-      <!-- Akhir Result -->
-
-      </div>
-
-  </div>
-
-    <!-- Result -->
 
     <!-- Footbar-->
 

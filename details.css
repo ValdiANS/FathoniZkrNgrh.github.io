@@ -12,21 +12,10 @@ section {
   padding-top: 1rem;
 }
 
-/* font responsive size */
-
-.jumbotron .fontsize (max-width: 50%) {
-  .jumbotron .display-1 {
-    font-size: 27px;
-  }
-}
-
-/* akhir font responsive size */
-
 /*Jumbotron*/
 
 .jumbotron {
-  background-image: url(/images/jumbotron1.jpg);
-  background-color: rgba(0, 0, 0, 8);
+  background-color: rgb(41, 154, 139);
   background-size: cover;
   padding-top: 8rem;
   height: auto;

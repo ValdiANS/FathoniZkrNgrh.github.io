@@ -15,12 +15,6 @@ section {
 
 .jumbotron {
   background-color: rgb(41, 154, 139);
-  background-color: linear-gradient(
-    90deg,
-    rgba(54, 102, 172, 1) 0%,
-    rgba(0, 191, 166, 1) 30%,
-    rgba(4, 131, 115, 1) 100%
-  );
   background-size: cover;
   padding-top: 8rem;
   height: auto;

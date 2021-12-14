@@ -14,7 +14,7 @@ section {
 
 /* font responsive size */
 
-.jumbotron .fontsize (max-width: 50%) {
+@media only screen and (max-width: 50%) {
   .jumbotron .display-1 {
     font-size: 27px;
   }
@@ -28,22 +28,22 @@ section {
   background-size: cover;
   height: auto;
   padding: auto;
-  padding-top: 8rem;
+  /* padding-top: 6rem; */
   width: 100%;
   color: black;
 }
 
 .jumbotron .row img {
-  position: absolute;
+  /* position: absolute;
   width: 550px;
   right: 60px;
-  top: 50px;
+  top: 50px; */
 }
 
 .jumbotron .row .col-sm button {
   color: #00bfa6;
-  position: absolute;
-  left: 164px;
+  /* position: absolute; */
+  /* left: 164px; */
   top: 10px;
 }
 
@@ -66,22 +66,22 @@ section {
 
 .jumbotron .display-1 {
   width: auto;
-  left: 164px;
-  bottom: auto;
+  /* left: 164px; */
+  /* bottom: auto; */
   margin-top: auto;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 800;
 }
 
 .titledetails .display-1 {
   padding-top: auto;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 900;
 }
 
 .titledetails .display-2 {
   padding-top: auto;
-  font-size: 54px;
+  font-size: 48px;
   font-weight: 900;
 }
 
@@ -95,7 +95,7 @@ section {
 }
 
 .jumbotron .hello {
-  font-size: 48;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -107,17 +107,17 @@ section {
     padding-right: 20px;
   }
   .jumbotron .row img {
-    position: absolute;
+    /* position: absolute; */
     width: 200px;
     padding: auto;
-    margin-top: 30px;
+    /* margin-top: 30px; */
   }
 
   .jumbotron .display-1 {
     width: auto;
-    left: 164px;
-    bottom: auto;
-    margin-top: auto;
+    /* left: 164px; */
+    /* bottom: auto; */
+    /* margin-top: auto; */
     font-size: 30px;
     font-weight: 800;
   }

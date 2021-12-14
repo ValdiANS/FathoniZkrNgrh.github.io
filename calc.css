@@ -13,7 +13,7 @@ section {
 
 /* font responsive size */
 
-.jumbotron .fontsize (max-width: 50%) {
+@media only screen and (max-width: 50%) {
   .jumbotron .display-1 {
     font-size: 27px;
   }
@@ -24,7 +24,7 @@ section {
 /*Jumbotron*/
 
 .jumbotron {
-  background-color: rgb(41, 154, 139);
+  /* background-color: rgb(41, 154, 139); */
   background-size: cover;
   padding-top: 8rem;
   width: 100%;
@@ -85,7 +85,48 @@ h3 {
 }
 /*Akhir Navbar*/
 
-/*form*/
+/* form */
+
+form {
+  width: 100%;
+}
+
+.gender .gender-caption {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.radio-input label {
+  cursor: pointer;
+}
+
+.text-input div label {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.text-input div input {
+  border: 2px solid #000000;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+form .hitung {
+  border-radius: 10000px;
+  border: none;
+  background-color: #00BFA6;
+  color: #ffffff;
+  font-size: 24px;
+  padding: 5px 0;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Akhir form */
+
+.calculator-img {
+  max-width: 300px;
+}
 
 /* Mobile Responsive */
 @media only screen and (max-width: 480px) {

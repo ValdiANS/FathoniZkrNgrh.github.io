@@ -74,9 +74,10 @@ h3 {
   font-size: large;
 }
 
-.navbar .navbar-brand {
+.navbar .navbar-brand img {
   color: white;
   font-size: 30px;
+  height: 45px;
 }
 
 .navbar .navbar-text {
@@ -140,9 +141,10 @@ form .hitung {
     font-size: medium;
   }
 
-  .navbar .navbar-brand {
+  .navbar .navbar-brand img {
     color: white;
     font-size: 20px;
+    height: 25px;
   }
 
   .navbar .navbar-text {

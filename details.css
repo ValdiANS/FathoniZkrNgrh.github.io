@@ -66,6 +66,10 @@ h3 {
   font-size: large;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid #ffffff;
+}
+
 .navbar .navbar-brand img {
   color: white;
   font-size: 30px;
@@ -88,7 +92,7 @@ h3 {
 }
 
 .container-fluid .row .col {
-  padding: 0rem 2rem 2rem 2rem;
+  /* padding: 0rem 2rem 2rem 2rem; */
 }
 
 h3 {
@@ -98,6 +102,9 @@ h3 {
 
 .card img {
   height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .card-title {
@@ -152,7 +159,7 @@ h3 {
 
   /* Card */
   .container-fluid .row .col {
-    padding: 5px;
+    /* padding: 5px; */
   }
 
   .container-fluid {

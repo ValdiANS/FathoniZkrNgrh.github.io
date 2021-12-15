@@ -55,6 +55,10 @@ section {
   font-size: large;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid #ffffff;
+}
+
 .navbar .navbar-brand img {
   color: white;
   font-size: 30px;

@@ -1,5 +1,5 @@
 html {
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -74,6 +74,10 @@ h3 {
   font-size: large;
 }
 
+.nav-link.active {
+  border-bottom: 2px solid #ffffff;
+}
+
 .navbar .navbar-brand img {
   color: white;
   font-size: 30px;
@@ -121,12 +125,36 @@ form .hitung {
   padding: 5px 0;
   width: 100%;
   max-width: 400px;
+  transition: .2s ease-in;
+}
+
+form .hitung:hover {
+  background-color: rgb(6, 136, 119);
 }
 
 /* Akhir form */
 
+.calculator-img-container {
+  position: absolute;
+  top: -3rem;
+  right: 0;
+  z-index: -10;
+}
+
 .calculator-img {
-  max-width: 300px;
+  max-width: 250px;
+}
+
+.imt-result-container {
+  padding-top: 7rem;
+  /* padding-left: 5rem;
+  padding-right: 5rem; */
+}
+
+.imt-result {
+  width: 100%;
+  border: 5px solid #00BFA6;
+  border-radius: 15px;
 }
 
 /* Mobile Responsive */

@@ -19,6 +19,8 @@
       rel="stylesheet"
     >
 
+    <script src="./js/foodDetails.js" defer type="module"></script>
+
     <title>Food Details</title>
   </head>
   <body>
@@ -44,11 +46,20 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <div class="navbar-nav">
             
-              <a class="nav-link active" aria-current="page" href="foodplans.html">Foodplans Calculator</a>
-            
-              <a class="nav-link" href="calc.html">IMT Calculator</a>
-            
-              <a class="nav-link" href="details.html">Food Details</a>
+            <a class="nav-link" aria-current="page" href="foodplans.html">
+              <img src="./images/menu-icon/foodplans-calculator.png" alt="foodplans-calculator">
+              Foodplans Calculator
+            </a>
+          
+            <a class="nav-link" href="calc.html">
+              <img src="./images/menu-icon/imt-calculator.png" alt="imt-calculator">
+              IMT Calculator
+            </a>
+          
+            <a class="nav-link active" href="details.html">
+              <img src="./images/menu-icon/food-details.png" alt="food-details.">
+              Food Details
+            </a>
             
           </div>
         </div>
@@ -76,13 +87,9 @@
     <section>
       <h3 class="text-center" id="pokok">Makanan Pokok</h3>
       <div class="container-fluid">
-        <div
-          class="
-            row row-cols-2 row-cols-md-4 row-cols-md-4
-            justify-content-center
-          "
-        >
-          <div class="col">
+        <div id="makananPokokContainer" class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 justify-content-center">
+
+          <!-- <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://images.unsplash.com/photo-1536304993881-ff6e9eefa2a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
@@ -99,7 +106,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://asset-a.grid.id/crop/0x0:0x0/360x240/photo/2020/01/22/1091829990.jpg"
@@ -116,7 +123,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://asset.kompas.com/crops/8vkxE20wFXQHZeBuZUtTjrYEnB0=/8x6:992x662/780x390/data/photo/2020/04/01/5e840176448de.jpg"
@@ -133,7 +140,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://media.istockphoto.com/photos/star-shaped-crakers-picture-id93392008?b=1&k=20&m=93392008&s=170667a&w=0&h=R5Iqxhz_miG0cyh03FfuhNKDLWIcxB0VIfJ1lESkog4="
@@ -150,7 +157,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://ibupediacdn.imgix.net/images/h9e6zpjca0tiyftv2.jpg"
@@ -167,7 +174,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://cdn.idntimes.com/content-images/post/20160718/19-5b0155b2aa07e4de6d40de5043875dd4_600x400.jpg"
@@ -184,7 +191,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://asset.kompas.com/crops/SKkQ_9arFnmRpid-5nO5vKKV-uA=/0x0:5184x3456/750x500/data/photo/2021/08/21/612061ab7e697.jpg"
@@ -201,7 +208,7 @@
             </div>
           </div>
 
-          <div class="col">
+          <div class="col pt-0 pb-3 px-2">
             <div class="card shadow">
               <img
                 src="https://akcdn.detik.net.id/visual/2020/11/23/ilustrasi-ubi-ungu-1_169.jpeg?w=650"
@@ -216,7 +223,7 @@
                 <p class="card-subtitle mb-2">Lemak</p>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -227,7 +234,7 @@
 
     <section>
       <h3 class="text-center" id="lauk">Lauk Pauk</h3>
-      <div class="container-fluid p-5">
+      <!-- <div class="container-fluid p-5">
         <div class="row row-cols-2 row-cols-md-4 justify-content-center">
           <div class="col">
             <div class="card shadow">
@@ -365,7 +372,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Akhir Lauk Pauk -->
@@ -374,7 +381,7 @@
 
     <section>
       <h3 class="text-center" id="buah">Buah-buahan</h3>
-      <div class="container-fluid p-5">
+      <!-- <div class="container-fluid p-5">
         <div class="row row-cols-2 row-cols-md-4 justify-content-center">
           <div class="col">
             <div class="card shadow">
@@ -512,7 +519,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Akhir Buah -->
@@ -521,7 +528,7 @@
 
     <section>
       <h3 class="text-center" id="sayur">Sayur-Mayur</h3>
-      <div class="container-fluid p-5">
+      <!-- <div class="container-fluid p-5">
         <div class="row row-cols-2 row-cols-md-4 justify-content-center">
           <div class="col">
             <div class="card shadow">
@@ -659,7 +666,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- Akhir Sayur -->

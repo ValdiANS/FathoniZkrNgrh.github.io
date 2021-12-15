@@ -19,6 +19,8 @@
       rel="stylesheet"
     >
 
+    <script src="./js/calc.js" defer type="module"></script>
+
     <title>Calculator IMT</title>
   </head>
   <body>
@@ -44,11 +46,20 @@
         <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
           <div class="navbar-nav">
             
-              <a class="nav-link active" aria-current="page" href="foodplans.html">Foodplans Calculator</a>
+              <a class="nav-link" aria-current="page" href="foodplans.html">
+                <img src="./images/menu-icon/foodplans-calculator.png" alt="foodplans-calculator">
+                Foodplans Calculator
+              </a>
             
-              <a class="nav-link" href="calc.html">IMT Calculator</a>
+              <a class="nav-link active" href="calc.html">
+                <img src="./images/menu-icon/imt-calculator.png" alt="imt-calculator">
+                IMT Calculator
+              </a>
             
-              <a class="nav-link" href="details.html">Food Details</a>
+              <a class="nav-link" href="details.html">
+                <img src="./images/menu-icon/food-details.png" alt="food-details.">
+                Food Details
+              </a>
             
           </div>
         </div>
@@ -76,7 +87,7 @@
 
       <form id="imtForm">
 
-        <div class="d-flex flex-column flex-md-row justify-content-center align-items-center align-items-lg-start gap-3 gap-md-5">
+        <div class="d-flex flex-column justify-content-center align-items-center gap-3">
           <div class="gender">
             <h4 class="gender-caption mb-4 text-center text-md-start">
               Pilih jenis kelamin anda
@@ -110,7 +121,7 @@
                       type="radio"
                       name="gender"
                       id="laki"
-                      value="laki"
+                      value="laki-laki"
                       class="mx-5"
                     >
                   </figure>
@@ -119,7 +130,7 @@
             </div>
           </div>
 
-          <div class="text-input d-flex flex-column flex-lg-row gap-3">
+          <div class="text-input d-flex flex-column flex-lg-row gap-4">
             <div class="usia d-flex flex-column gap-2">
               <label for="usia">Masukkan usia anda! (tahun)</label>
               <input type="text" id="usia" name="usia">
@@ -135,18 +146,37 @@
           </div>
         </div>
 
-        <div class="w-100 d-flex justify-content-center mt-5 mt-lg-0">
+        <div class="w-100 d-flex flex-column justify-content-center align-items-center mt-5">
           <button class="hitung mx-auto">
             Hitung
           </button>
+
+          <p id="errorMsg" class="mt-1 text-danger px-5 d-none">
+            error
+          </p>
         </div>
           
       </form>
 
     </main>
 
-    <div class="position-relative">
-      <img src="./images/IMT/calculator.png" alt="Calculator" class="calculator-img">
+    <div class="position-relative mb-5">
+
+      <div class="calculator-img-container">
+        <img src="./images/IMT/calculator-2.png" alt="Calculator" class="calculator-img">
+      </div>
+      
+      <div class="imt-result-container px-3 px-sm-5 d-none">
+        <section id="imtResult" class="imt-result text-center py-5 px-3">
+          <h1 class="pb-4 pt-3 fw-bold">
+            IMT Anda 19.5
+          </h1>
+    
+          <p class="pb-3">
+            Indeks massa tubuh anda <strong>19.5</strong>, maka anda direkomendasi untuk <strong>menambah berat badan</strong>.
+          </p>
+        </section>
+      </div>
     </div>
     
 

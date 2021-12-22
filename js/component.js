@@ -6,6 +6,7 @@ const foodComponent = (foodData) => (
         src="${foodData.imageUrl}"
         class="card-img-top"
         alt="images"
+        loading="lazy"
       />
       <div class="card-body">
         <h5 class="card-title">${foodData.nama}</h5>

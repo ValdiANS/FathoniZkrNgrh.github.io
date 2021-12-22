@@ -1,0 +1,52 @@
+main {
+  font-family: "Poppins", sans-serif;
+}
+
+.form-data {
+  background-color: #00BFA6;
+  border-radius: 20px;
+  max-width: 430px;
+}
+
+
+
+
+/* Card */
+.card img {
+  height: 10rem;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+.card {
+  width: auto;
+  max-width: 300px;
+  height: auto;
+}
+/* End Card */
+
+@media only screen and (max-width: 480px) {
+
+  /* Card */
+  
+  .card-subtitle {
+    font-size: 10px;
+  }
+
+  .card-title {
+    font-size: 14px;
+    font-weight: 600;
+  }
+
+  .card img {
+    width: auto;
+    height: 5rem;
+  }
+
+  /* Akhir card */
+}

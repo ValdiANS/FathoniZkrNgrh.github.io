@@ -1,5 +1,4 @@
-// const baseUrl = 'https://sixers.netlify.app/.netlify/functions';
-const baseUrl = 'http://localhost:8888/.netlify/functions';
+const baseUrl = 'https://sixers.netlify.app/.netlify/functions';
 
 const CONFIG = {
   baseUrl,

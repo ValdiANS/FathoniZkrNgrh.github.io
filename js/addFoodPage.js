@@ -24,12 +24,14 @@ foodForm.addEventListener('submit', async (e) => {
   e.preventDefault();
   hideErrorMsg();
   hideSuccessMsg();
+  showLoadingSpinner();
 
   const formValidation = await validateForm();
 
   if (!formValidation.valid) {
     setErrorMsg(formValidation.msg);
-
+    
+    hideLoadingSpinner();
     showErrorMsg();
     return;
   }
@@ -38,10 +40,10 @@ foodForm.addEventListener('submit', async (e) => {
     nama: nama.value,
     imageUrl: imageUrl.value,
     kandungan: {
-      kalori: parseInt(kalori.value),
-      karbohidrat: parseInt(karbohidrat.value),
-      protein: parseInt(protein.value),
-      lemak: parseInt(lemak.value),
+      kalori: parseFloat(kalori.value),
+      karbohidrat: parseFloat(karbohidrat.value),
+      protein: parseFloat(protein.value),
+      lemak: parseFloat(lemak.value),
     },
   }
 
@@ -65,6 +67,7 @@ foodForm.addEventListener('submit', async (e) => {
       break;
   }
 
+  hideLoadingSpinner();
   showSuccessMsg();
 
   foodForm.reset();
@@ -196,4 +199,12 @@ function showSuccessMsg() {
 
 function hideSuccessMsg() {
   $('.success-msg-container').classList.add('d-none');
+}
+
+function showLoadingSpinner() {
+  $('.loading-spinner-container').classList.remove('d-none');
+}
+
+function hideLoadingSpinner() {
+  $('.loading-spinner-container').classList.add('d-none');
 }

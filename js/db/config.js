@@ -6,6 +6,10 @@ const CONFIG = {
   laukPaukEndpoint: `${baseUrl}/lauk_pauk`,
   buahEndpoint: `${baseUrl}/buah`,
   sayurEndpoint: `${baseUrl}/sayur`,
+
+  customCriteriaEndpoint: (endpoint, criteria) => (
+    `${baseUrl}/${endpoint}?isSmart=true&kriteria=${criteria}`
+  ),
 };
 
 export default CONFIG;

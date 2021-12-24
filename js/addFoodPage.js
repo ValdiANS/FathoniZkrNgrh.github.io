@@ -1,5 +1,10 @@
 import { $ } from "./general.js";
-import { addMakananPokok, addLaukPauk, addBuah, addSayur } from "./db/addFoodData.js";
+import {
+  addMakananPokok,
+  addLaukPauk,
+  addBuah,
+  addSayur,
+} from "./db/addFoodData.js";
 
 const foodForm = $('#foodForm');
 const resetBtn = $('button[type="reset"]');
@@ -65,6 +70,14 @@ foodForm.addEventListener('submit', async (e) => {
     case 'sayur':
       addFood = await addSayur(foodData);
       break;
+  }
+
+  if (addFood.error) {
+    hideLoadingSpinner();
+    setErrorMsg(addFood.msg);
+    showErrorMsg();
+
+    return;
   }
 
   hideLoadingSpinner();
@@ -152,8 +165,6 @@ async function validateForm() {
     errorList.push('image URL');
 
   } else {
-    console.log('images');
-
     try {
       const image = await checkIfImageExists(imageUrl.value);
 

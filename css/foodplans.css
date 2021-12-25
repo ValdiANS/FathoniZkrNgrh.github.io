@@ -159,6 +159,18 @@ form button[type="submit"]:disabled {
   border-radius: 5px;
 }
 
+.rank-info.first {
+  background-color: #FFD700;
+}
+
+.rank-info.second {
+  background-color: #C0C0C0;
+}
+
+.rank-info.third {
+  background-color: #B87333;
+}
+
 .card .nilai-akhir {
   font-weight: 600;
 }

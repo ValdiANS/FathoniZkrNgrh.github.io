@@ -123,9 +123,9 @@ form button[type="submit"]:disabled {
   /* padding: 3rem; */
 }
 
-.container-fluid .row .col {
-  /* padding: 0rem 2rem 2rem 2rem; */
-}
+/* .container-fluid .row .col {
+  padding: 0rem 2rem 2rem 2rem;
+} */
 
 .card {
   border-radius: 5px;
@@ -217,10 +217,10 @@ form button[type="submit"]:disabled {
 
   /* Form */
 
-  .container .row {
-    /* padding: 0rem 2rem 2rem 2rem; */
-    /* font-size: 12px; */
-  }
+  /* .container .row {
+    padding: 0rem 2rem 2rem 2rem;
+    font-size: 12px;
+  } */
 
   .radiotext {
     /* font-size: 12px; */
@@ -237,9 +237,9 @@ form button[type="submit"]:disabled {
   /* Akhhir form */
 
   /* Card */
-  .container-fluid .row .col {
-    /* padding: 5px; */
-  }
+  /* .container-fluid .row .col {
+    padding: 5px;
+  } */
 
   .container-fluid {
     padding-top: 1rem;
@@ -257,6 +257,10 @@ form button[type="submit"]:disabled {
   .card img {
     width: auto;
     max-height: 5rem;
+  }
+
+  .rank-info {
+    font-size: 0.7rem;
   }
 
   /* Akhir card */

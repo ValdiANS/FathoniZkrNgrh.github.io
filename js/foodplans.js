@@ -31,10 +31,10 @@ criteriaForm.addEventListener('submit', (e) => {
   if (radioInputSelection === 'custom') {
     const customCriteria = JSON.stringify({
       customCriteria: {
-        kalori: customKalori.value,
-        karbohidrat: customKarbohidrat.value,
-        protein: customProtein.value,
-        lemak: customLemak.value,
+        kalori: parseFloat(customKalori.value),
+        karbohidrat: parseFloat(customKarbohidrat.value),
+        protein: parseFloat(customProtein.value),
+        lemak: parseFloat(customLemak.value),
       }
     });
 
@@ -88,6 +88,16 @@ radioInputs.forEach((radioItem) => {
 
     radioInputSelection = radioItem.value;
   })
+
+  const rekomendasi = checkUrlParam();
+
+  if (rekomendasi) {
+    radioItem.checked = false;
+
+    if (radioItem.value === rekomendasi) {
+      radioItem.checked = true;
+    }
+  }
 
   if(radioItem.checked) {
     // fetch result according radio input selection for the first time
@@ -248,6 +258,17 @@ async function fetchSayurSmart(custom = false, criteria, customCriteria = {}) {
   }
 
   hideLoadingSpinner('sayur');
+}
+
+function checkUrlParam() {
+  const url = new URL(window.location.href);
+  const urlParam = new URLSearchParams(url.search);
+
+  if (urlParam.has('rekomendasi')) {
+    return urlParam.get('rekomendasi');
+  }
+
+  return false;
 }
 
 function validateCustomCriteriaForm() {

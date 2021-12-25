@@ -143,6 +143,7 @@ form .hitung:hover {
 
 .calculator-img {
   max-width: 250px;
+  filter: blur(2px);
 }
 
 .imt-result-container {
@@ -155,6 +156,10 @@ form .hitung:hover {
   width: 100%;
   border: 5px solid #00BFA6;
   border-radius: 15px;
+}
+
+.imt-result .btn-success {
+  background-color: #00BFA6;
 }
 
 /* Mobile Responsive */

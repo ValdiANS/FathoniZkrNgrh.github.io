@@ -9,6 +9,7 @@ let gender = '';
 
 let imt;
 let rekomendasi;
+let rekomendasiParam;
 
 radioInput.forEach((radioItem) => {
   radioItem.addEventListener('click', () => {
@@ -37,29 +38,36 @@ imtForm.addEventListener('submit', (e) => {
 
   if (imt < 18.5) {
     rekomendasi = 'menambah berat badan';
+    rekomendasiParam = 'bulking';
   }
   
   else if (imt >= 18.5 && imt <= 25) {
     rekomendasi = 'menjaga berat badan';
+    rekomendasiParam = 'jagaBB';
   }
   
   else if (imt > 25) {
     rekomendasi = 'menurunkan berat badan (diet)';
+    rekomendasiParam = 'diet';
   }
   
-  setImtResult(imt, rekomendasi);
+  setImtResult(imt, rekomendasi, rekomendasiParam);
 
   $('.imt-result-container').scrollIntoView();
 });
 
-const setImtResult = (imt, rekomendasi) => {
+const setImtResult = (imt, rekomendasi, rekomendasiParam) => {
   const heading = $('#imtResult > h1');
   const detail = $('#imtResult > p');
+  const recommendationLink = $('#imtFoodRecommendations');
 
   heading.innerText = `IMT Anda ${imt.toFixed(2)}`;
   detail.innerHTML = `
-    Indeks massa tubuh anda <strong>${imt.toFixed(2)}</strong>, maka anda direkomendasi untuk <strong>${rekomendasi}</strong>.
+    Indeks massa tubuh anda <strong>${imt.toFixed(2)}</strong>, maka anda direkomendasikan untuk <strong>${rekomendasi}</strong>.
   `;
+
+  recommendationLink.href = `./foodplans.html?rekomendasi=${rekomendasiParam}`;
+  recommendationLink.innerText = `Lihat Rekomendasi Makanan Untuk ${rekomendasi}`;
 
   $('.imt-result-container').classList.remove('d-none');
 };
